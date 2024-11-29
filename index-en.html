@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Draft | English Page</title>
+    <meta name="description" content="Premium draft beer with classic taste and exceptional quality.">
+    <meta name="keywords" content="draft beer, craft beer, Singha beer, Leo beer, Asahi beer">
+    <link rel="stylesheet" href="style.css">
+    <!-- เพิ่ม Google Font Kanit -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Classic Taste of Craft Beer</h1>
+            <p>Experience the classic taste of premium draft beer.</p>
+            <div class="cta-buttons">
+                <a href="#products" class="btn-primary">See Products</a>
+                <a href="#contact" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="gallery" class="gallery-section">
+            <h2>The atmosphere of the shop</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="picture\ิbeer-singha1.jpg" alt="แก้วเบียร์สิงห์">
+                </div>
+                <div class="gallery-item">
+                    <img src="picture\ิbeer-singha2.jpg" alt="ลูกค้ากับเบียร์สิงห์">
+                </div>
+                <div class="gallery-item">
+                    <img src="picture\ิbeer-singha3.jpg" alt="บรรยากาศกับเบียร์ลีโอ">
+                </div>
+                <div class="gallery-item">
+                    <img src="picture\ิbeer-singha4.jpg" alt="สถานที่จัดเบียร์สด">
+                </div>
+            </div>
+        </section>
+        <section id="products" class="products-section">
+            <h2>Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="picture/Singha_Beer_Logo.png" alt="สิงห์ 30 ลิตร">
+                    <h3>Singha 30 Liters</h3>
+                    <p>Price: 3,700 THB</p>
+                </div>
+                <div class="product-item">
+                    <img src="picture/images.jpg" alt="ลีโอ 30 ลิตร">
+                    <h3>Leo 30 Liters</h3>
+                    <p>Price: 3,250 THB</p>
+                </div>
+                <div class="product-item">
+                    <img src="picture/Asahi-Super-Dry-Logo.jpg" alt="อาซาฮี 30 ลิตร">
+                    <h3>Asahi 30 Liters</h3>
+                    <p>Price: 3,850 THB</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> 089-9351182</p>
+            <p><strong>Contact Person:</strong> Mr. Boonphob Prasing</p>
+            <p>Singha Draft Beer Chonburi Co., Ltd.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Singha Draft Beer Chonburi Co., Ltd. All Rights Reserved.</p>
+    </footer>
+    
+    
+
+    <!-- ปุ่มเปลี่ยนภาษา -->
+    <div class="language-switch">
+        <button id="btn-th" onclick="changeLanguage('th')">ไทย</button>
+        <button id="btn-en" onclick="changeLanguage('en')">English</button>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'index-en.html'; // ไปยังหน้าอังกฤษ
+            } else if (lang === 'th') {
+                window.location.href = 'index-th.html'; // ไปยังหน้าไทย
+            }
+        }
+    </script>
+</body>
+</html>

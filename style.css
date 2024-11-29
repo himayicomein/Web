@@ -1,0 +1,205 @@
+/* ตั้งค่าพื้นฐาน */
+/* ตั้งฟอนต์ Kanit เป็นค่าเริ่มต้น */
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* สไตล์อื่น ๆ ที่ต้องการใช้ฟอนต์ */
+.hero h1, .products-section h2, .gallery-section h2, .contact-section h2, footer p {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600; /* ใช้ความหนาที่เหมาะสม */
+}
+
+.hero p, .product-item p, .contact-section p {
+    font-weight: 300; /* น้ำหนักตัวบางสำหรับข้อความรอง */
+}
+
+
+.hero {
+    background: url('picture/background.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons a {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #FFD700;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-buttons a:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+.language-switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.language-switch button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    background: #FFD700;
+    color: #333;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.language-switch button:hover {
+    background: #f39c12;
+    color: #fff;
+}
+
+.products-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-section {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+}
+/* Footer Section */
+.footer {
+    background-color: #333; /* พื้นหลังสีดำ */
+    color: white; /* ตัวอักษรสีขาว */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    padding: 15px 0; /* เพิ่มระยะห่างด้านบนและด้านล่าง */
+    font-size: 0.9rem; /* ขนาดตัวอักษร */
+}
+
+.footer p {
+    margin: 0; /* ลบระยะห่างรอบข้อความ */
+}
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: calc(25% - 20px); /* แสดง 4 รูปต่อแถว */
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* ขยายเมื่อชี้เมาส์ */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px); /* แสดง 2 รูปต่อแถว */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%; /* แสดง 1 รูปต่อแถว */
+    }
+}
